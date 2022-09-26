@@ -334,8 +334,8 @@ img{
     background-color: var(--bg1);
     border-radius: 20px 200px 10px 0; 
     padding: 0 2rem;
-    border: 1px solid red;
-    
+    border: 1px solid var(--green);
+
 }
 
 .about .left img{
@@ -353,13 +353,13 @@ img{
     height: 440px;
     background-color: var(--light-gradiant);
     z-index: 1;
-    opacity: 0.5;
+    opacity: 0.9;
     border-radius: 0 0 20px 200px;
 }
 
-.about .right{
+/* .about .right{
     border: 1px solid red
-}
+} */
 
 .about .right h1 {
     font-size: var(--big-font-size);
@@ -411,7 +411,7 @@ img{
     max-width: 1200px;
     margin: 0 auto;
     min-height: 40vh;
-    border: 1px solid red;
+   /*  border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -426,7 +426,7 @@ img{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid red;  
+    /* border: 1px solid red; */  
     gap: 50px;
     flex-wrap: wrap;
     padding: 40px;
@@ -456,11 +456,14 @@ img{
     align-items: center;
     border: 1px solid red;
     margin:0 auto;
-    padding-top:3rem;
+    padding-top:7rem;
+    line-height: 40px;
 }
 
 .cursos h1{
+    text-align: center;
     font-size: var(--big-font-size);
+    padding-bottom: 2rem;
     
 }
 
@@ -623,13 +626,16 @@ img{
 
    /* empieza about */
 
-    .about .left{
-        transform: scale(0.9);
-    }
+
     .about .container {
         margin-top: -2rem;
+        padding-top: 5.5rem;
         display: flex;
         flex-direction: column;
+    }
+
+    .about .left{
+        transform: scale(0.9);
     }
 
     .about .right {
@@ -638,7 +644,7 @@ img{
         align-items: center;
         justify-content: center;
         padding: 3rem ;
-        margin-top: -4rem;
+        margin-top: -5rem;
     
     }
 
@@ -656,6 +662,10 @@ img{
         display: flex;
     }
     /* termina .colaboraciones */
+
+    /* seccion de .cursos */
+    
+    /* seccion de cursos */
 
 }
 
