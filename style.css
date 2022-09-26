@@ -446,6 +446,59 @@ img{
 }
 /* termina colaboraciones */
 
+/* empieza cursos */
+.cursos{
+    max-width: 1200px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    margin:0 auto;
+    padding-top:3rem;
+}
+
+.cursos h1{
+    font-size: var(--big-font-size);
+    
+}
+
+.cursos span{
+    color: var(--light-gradiant) ;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-clip: text;
+}
+
+.cursos .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 2rem 0;
+}
+
+.cursos .container .child{
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 3px solid var(--light-gradiant);
+    border-radius: 10px;
+}
+
+.cursos .container .child img{
+    width: 70px;
+}
+
+.cursos .container .child h2{
+    margin-left: 1rem;
+}
+
+
+/* termina cursos */
 
 /* empieza media Querires */
 @media (max-width: 960px){
@@ -605,8 +658,6 @@ img{
     /* termina .colaboraciones */
 
 }
-
-
 
 
 @media (max-width:1060px){
