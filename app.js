@@ -59,3 +59,23 @@ var swiper = new Swiper(".slide", {
         },
     },
 });
+
+/* shadow header */
+
+const header = document.querySelector(".header");
+window.addEventListener("scroll", () => {
+    if (window.scrollY >= 70) {
+        header.classList.add("header-sh");
+    } else {
+        header.classList.remove("header-sh");
+    }
+});
+
+/* arriba */
+const up = document.querySelector(".up");
+window.addEventListener("scroll", () => {
+    up.classList.toggle("show", window.scrollY >= 560);
+    up.onclick = () => {
+        window.scrollTo({ behavior: "smooth", top: "0" });
+    };
+});

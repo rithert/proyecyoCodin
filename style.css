@@ -55,6 +55,11 @@ img{
 
 /* empieza header */
 
+.header-sh{
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
 .header{
     width: 100%;
     height: var(--header-height);
@@ -174,7 +179,6 @@ img{
     background-color: var(--bg1);
     min-height: 100vh;
    /*  border: 1px solid red;   */
-   border: 1px solid red;
 }
 
 /* .home .left{
@@ -321,7 +325,6 @@ img{
     gap: 50px;
     min-height: 100vh;
     background-color: var(--bg1);
-    border: 1px solid red;
 }
 
 .about .left{
@@ -453,7 +456,6 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
     margin:0 auto;
     padding-top: var(--header-height);
     line-height: 40px;
@@ -547,7 +549,6 @@ img{
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    border:1px solid red;
     text-align: center;
 }
 
@@ -573,7 +574,6 @@ img{
     transition: transform 0.5s;
     cursor: pointer;
     box-shadow: 0 0 25px 0 rgba(0,0,0,0.6 );
-    border: 1px solid red;
 
 }
 
@@ -587,7 +587,6 @@ img{
 
 .testimonios .item .righ{
     width: calc(100%-270px);
-    border: 1px solid red;
     height: 100%;
     text-align: start;
     padding: 2rem;
@@ -665,9 +664,127 @@ img{
 
 /* termina secccion numeros */
 
+/* empieza footer */
+.lista{
+    margin: 0 auto ;
+    padding: var(--header-height);
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    gap:1rem;
+    border-bottom: 1px var(--orange);
+}
+
+.lista .data{
+    text-align: center;
+}
+
+.lista .data .data-social{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    margin: 1rem;
+}
+
+.lista .data .data-social a{
+    color: var(--text);
+    font-size: var(--h2-font-size);
+    transition: all 0.3s ease-in-out;
+}
+
+.lista .data .data-social a:hover{
+    color: var(--light-gradiant);
+}
+
+.lista .data .download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+}
+
+.lista .data .download img{
+    width: 175px;
+    padding: 0.5rem;
+}
+
+.lista .data-f{
+    text-align: center;
+}
+
+.lista .data-f h2{
+    font-size: var(--h2-font-size);
+    font-weight: 700;
+    color: var(--dark-gradiant);
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+
+}
 
 
+.lista .data-f p{
+    font-size: var(--h3-font-size);
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+}
 
+.lista .data-f p:hover{
+    text-decoration: underline;
+}
+
+.copy{
+    text-align: center;
+    padding: 1rem ;
+}
+.copy p{
+    font-weight: 700;
+}
+
+
+/* termina footer */
+
+/* boton top */
+
+.up{
+    position: fixed;
+    bottom: 1.5rem;
+    right: -5rem;
+    background-color: var(--dark-gradiant);
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--bg1);
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+
+.up .i{
+    font-size: 30px;
+}
+
+.up:hover{
+    background-color: var(--light-gradiant);
+}
+
+.show{
+    right: 1.5rem;
+}
+
+/* termnia top */
+
+/* barras de desplazamiento */
+::-webkit-scrollbar{
+    width: 0.7rem;
+    background-color: var(--light-gradiant);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--orange);
+}
+
+/* fin barra desplzamiento */
 
 /* empieza media Querires */
 @media (max-width: 960px){
@@ -858,7 +975,6 @@ img{
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid red;
     }
 
     .testimonios .item .righ{
@@ -885,6 +1001,12 @@ img{
    }
    /* termina secccion numeros */
 
+   /* empieza footer */
+   .footer .lista{
+        transform: scale(0.9);
+        grid-template-columns: repeat(2,1fr);
+   }
+   /* termina footer */
 }
 
 
@@ -910,6 +1032,11 @@ img{
    }
     /* termina secccion numeros */
 
+    /* empieza footer */
+    .footer .lista{
+        grid-template-columns: unset;
+   }
+    /*termina footer */
 }
 
 @media (max-width:400px){
