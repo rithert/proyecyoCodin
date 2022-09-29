@@ -620,13 +620,51 @@ img{
     opacity: 0.8;
 }
 
-
-
-
-
-
-
 /* termina testimonios */
+
+/* empieza seccion .numeros */
+.numeros .container{
+    min-height: 38vh;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.numeros .container .itemnum{
+    position: relative;
+}
+
+.numeros .container .itemnum .text{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.numeros .container .itemnum .text h1{
+    color: var(--bg1);
+    font-size: 2.8rem;
+    margin-top: -20px;
+    margin-right:15px;
+}
+
+.numeros .container .itemnum .text h2{
+    font-weight: 400;
+    font-size: var(--h2-font-size);
+    color: var(--bg1);
+    line-height: 25px;
+    margin-top: -5px;
+}
+
+.numeros .container .itemnum img{
+    width: 175px;
+}
+
+/* termina secccion numeros */
+
 
 
 
@@ -840,6 +878,13 @@ img{
 
     /* termina testimonios */
 
+   /*  empieza seccion numeros */
+   .numeros .container{
+        transform: scale(0.9) ;
+        grid-template-columns: repeat(2,auto);
+   }
+   /* termina secccion numeros */
+
 }
 
 
@@ -857,6 +902,13 @@ img{
     .home .left form input[type="email"]{
         width: 400px;
     }
+
+     /*  empieza seccion numeros */
+    .numeros .container{
+        transform: scale(0.9) ;
+        grid-template-columns: unset;
+   }
+    /* termina secccion numeros */
 
 }
 
