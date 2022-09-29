@@ -35,3 +35,27 @@ function colorlink() {
 linkColor.forEach((i) => {
     i.addEventListener("click", colorlink);
 });
+
+/* Slider Testimonio */
+var swiper = new Swiper(".slide", {
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakPoints: {
+        560: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        860: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+        },
+        1060: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+        },
+    },
+});
